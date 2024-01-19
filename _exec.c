@@ -21,6 +21,7 @@ int _exec(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				{"swap", f_swap},
 				{"add", f_add},
 				{"nop", f_nop},
+				{"sub", f_sub},
 				{NULL, NULL}
 				};
 	
