@@ -16,9 +16,9 @@ void f_push(stack_t **head, unsigned int counter)
 	{ 
 		if (car.arges[0] == '-')
 			q++;
-		for (; car.arges[ga] != '\0'; ga++)
+		for (; car.arges[q] != '\0'; q++)
 		{
-			if (car.arges[ga] > 57 || car.arges[ga] < 48)
+			if (car.arges[q] > 57 || car.arges[q] < 48)
 				light = 1;
 		}
 		if (light == 1)
@@ -36,9 +36,9 @@ void f_push(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	q = atoi(car.arges);
+	ga = atoi(car.arges);
 	if (car.wan == 0)
-		newnode(head, q);
+		newnode(head, ga);
 	else
-		newqueue(head, q);
+		newqueue(head, ga);
 }

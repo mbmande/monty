@@ -69,5 +69,5 @@ int _exec(char *content, stack_t **stack, unsigned int counter, FILE *file);
 void f_pall(stack_t **head, unsigned int counter);
 void free_stack(stack_t *head);
 void newqueue(stack_t **head, int n);
-
+void f_pint(stack_t **head, unsigned int counter);
 #endif
